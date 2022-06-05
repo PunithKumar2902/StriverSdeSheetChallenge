@@ -1,7 +1,6 @@
 #include <bits/stdc++.h> 
 vector<vector<long long int>> printPascal(int n) 
 {
-  // Write your code here.
     vector<vector<long long int>> triangle;
         
         triangle.push_back({1});
