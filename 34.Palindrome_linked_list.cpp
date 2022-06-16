@@ -1,4 +1,8 @@
-    ListNode* temp,*prev=NULL,*next,*fast,*slow=head;
+#include <bits/stdc++.h> 
+
+bool isPalindrome(LinkedListNode<int> *head) {
+    
+    LinkedListNode<int>* temp,*prev=NULL,*next,*fast,*slow=head;
 
     fast=head;
         
@@ -21,10 +25,12 @@
         
         while(slow)
         {
-            if(fast->val!=slow->val)
+            if(fast->data!=slow->data)
                 return false;
             
             fast=fast->next;
             slow=slow->next;
         }
         return true;
+
+}
